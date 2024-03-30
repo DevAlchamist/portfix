@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <Box className="text-white absolute bg-transparent/10 w-full p-5 flex items-center justify-around">
+    <Box className="text-white absolute backdrop-blur-sm bg-transparent/10 w-full p-5 flex items-center justify-around">
       <Box className="text-xl font-semibold">Dev Alchamist</Box>
       <Box className="flex gap-5">
         <Box className="text-md font-md">Home</Box>

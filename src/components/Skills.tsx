@@ -8,8 +8,11 @@ import js from "@/assets/icons/javascript.svg";
 import mongo from "@/assets/icons/mongo.svg";
 import node from "@/assets/icons/nodejs.svg";
 import react from "@/assets/icons/react.svg";
+import Next from "@/assets/icons/image.png";
 import redux from "@/assets/icons/redux.svg";
 import ts from "@/assets/icons/typescript.svg";
+import css from "@/assets/icons/Tailwind CSS.svg";
+import con from "@/assets/icons/favicon.png";
 import vs from "@/assets/icons/vscode.svg";
 import React, { useState } from "react";
 import { Cursor, Typewriter } from "react-simple-typewriter";
@@ -19,7 +22,7 @@ import Image from "next/image";
 const Skills = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const skills = [
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
       <Image src={html} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">HTML/CSS</Box>
       <Box>
@@ -27,7 +30,7 @@ const Skills = () => {
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
       <Image src={js} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">JavaScript</Box>
       <Box>
@@ -35,22 +38,29 @@ const Skills = () => {
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
-      <Image src={ts} alt="as" height={75} width={75} className="my-5" />
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
+      <Image
+        src={ts}
+        alt="as"
+        height={75}
+        width={75}
+        className=" my-5"
+      />
       <Box className="text-4xl font-bold">TypeScript</Box>
       <Box>
         Proficient in creating responsive and visually appealing we layouts
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
+      <Image src={Next} alt="as" height={90} width={90} className=" my-5" />
       <Box className="text-4xl font-bold">Next Js</Box>
       <Box>
         Proficient in creating responsive and visually appealing we layouts
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
       <Image src={react} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">React</Box>
       <Box>
@@ -58,7 +68,7 @@ const Skills = () => {
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
       <Image src={redux} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">Redux</Box>
       <Box>
@@ -66,14 +76,15 @@ const Skills = () => {
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
+      <Image src={con} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">Convex/Clerk</Box>
       <Box>
         Proficient in creating responsive and visually appealing we layouts
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
       <Image src={mongo} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">MongoDB</Box>
       <Box>
@@ -81,14 +92,15 @@ const Skills = () => {
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
+      <Image src={css} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">Tailwind</Box>
       <Box>
         Proficient in creating responsive and visually appealing we layouts
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
       <Image src={git} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">GitHub</Box>
       <Box>
@@ -96,7 +108,7 @@ const Skills = () => {
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
       <Image src={node} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">Node js</Box>
       <Box>
@@ -104,7 +116,7 @@ const Skills = () => {
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
       <Image src={figma} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">Figma</Box>
       <Box>
@@ -112,8 +124,8 @@ const Skills = () => {
         using HTML and CSS{" "}
       </Box>
     </Box>,
-    <Box className="w-[350px] px-6  py-20 rounded-xl bg-[#121924]">
-        <Image src={vs} alt="as" height={75} width={75} className="my-5" />
+    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
+      <Image src={vs} alt="as" height={75} width={75} className="my-5" />
       <Box className="text-4xl font-bold">VS Code</Box>
       <Box>
         Proficient in creating responsive and visually appealing we layouts
@@ -146,10 +158,10 @@ const Skills = () => {
         </Box>
         <Box className="">
           <IconButton className="mx-2 bg-[#121924]" onClick={prevSkill}>
-            <ChevronLeft className="text-white "  />
+            <ChevronLeft className="text-white " />
           </IconButton>
           <IconButton className="mx-2 bg-[#121924]" onClick={nextSkill}>
-            <ChevronRight className="text-white "  />
+            <ChevronRight className="text-white " />
           </IconButton>
         </Box>
       </Box>

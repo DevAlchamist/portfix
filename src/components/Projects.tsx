@@ -12,12 +12,14 @@ const Projects = () => {
       image: movix,
       alt: "pr1",
       translate: "custom",
+      name: "Cine-Verse",
     },
     {
       image: Task,
       alt: "pr2",
       translate: "0",
       height: "full",
+      name: "Task-Mate",
     },
   ];
   return (
@@ -37,12 +39,21 @@ const Projects = () => {
         </Box>
         <Box className="grid-cols-2 grid gap-5">
           {Images.map((img) => (
-            <Box className="col-span-1 border-white border-2 w-full overflow-hidden h-[430px] rounded-xl ">
+            <Box className="relative col-span-1 border-white border-2 w-full overflow-hidden h-[430px] rounded-xl ">
+              {img.height && (
+                <div className="w-full z-10 h-full absolute inset-0 hover:bg-gradient-to-t hover:from-gray-600 hover:to-transparent"></div>
+              )}
+              <Box className="absolute z-20  left-1 bottom-1 text-4xl font-bold rounded-lg text-white py-1 px-5 ">
+                {img.name}
+              </Box>
               <Image
                 src={img.image}
                 alt={img.alt}
-                className={`w-full h-${img.height} transform hover:translate-y-${img.translate} duration-1000 ease-linear`}
+                className={`w-full z-0 h-${img.height} transform hover:translate-y-${img.translate} duration-1000 ease-linear`}
               />
+              <Box className="absolute right-1 top-1 bg-red-500 rounded-lg text-white py-1 px-5 ">
+                Web
+              </Box>
             </Box>
           ))}
         </Box>

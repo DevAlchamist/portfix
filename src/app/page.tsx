@@ -1,3 +1,4 @@
+
 import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
@@ -8,14 +9,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <Box className=" bg-[#1e1842]">
-      <Box className="fixed top-0 left-0 right-0">
-        <Navbar />
-      </Box>
+    <Box className=" bg-[#1e1842]"> 
       <Intro />
       <Skills />
       <Projects />
-      <Footer/>
     </Box>
   );
 }

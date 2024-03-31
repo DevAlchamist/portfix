@@ -18,6 +18,7 @@ import React, { useState } from "react";
 import { Cursor, Typewriter } from "react-simple-typewriter";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { useGesture } from "react-use-gesture";
 
 const Skills = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,13 +40,7 @@ const Skills = () => {
       </Box>
     </Box>,
     <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image
-        src={ts}
-        alt="as"
-        height={75}
-        width={75}
-        className=" my-5"
-      />
+      <Image src={ts} alt="as" height={75} width={75} className=" my-5" />
       <Box className="text-4xl font-bold">TypeScript</Box>
       <Box>
         Proficient in creating responsive and visually appealing we layouts
@@ -142,6 +137,20 @@ const Skills = () => {
     setCurrentIndex((currentIndex - 1 + skills.length) % skills.length);
   };
 
+  // Gesture handler
+  const bind = useGesture({
+    onDrag: ({ direction: [xDir], distance, cancel }) => {
+      if (distance > window.innerWidth / 4) {
+        cancel();
+        if (xDir > 0) {
+          setCurrentIndex((currentIndex - 1 + skills.length) % skills.length);
+        } else {
+          setCurrentIndex((currentIndex + 1) % skills.length);
+        }
+      }
+    },
+  });
+
   return (
     <Box className="flex flex-col text-white items-center justify-center p-10 bg-[#070d1a]">
       <Box className="flex w-[80%] items-center justify-between">
@@ -167,10 +176,11 @@ const Skills = () => {
       </Box>
       <Box className="w-[80%] overflow-hidden">
         <motion.div
-          className="flex gap-5 my-10"
+          className="cursor-pointer flex gap-5 my-10"
           initial={{ x: 0 }}
           animate={{ x: -currentIndex * 350 }} // Adjust the multiplier based on the width of your skill items
-          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          transition={{ type: "spring", stiffness: 50, damping: 10 }}
+          {...bind()} // Bind the gesture handler
         >
           {skills.map((skill, index) => (
             <motion.div

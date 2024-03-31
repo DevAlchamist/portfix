@@ -2,8 +2,8 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import movix from "@/assets/icons/cine-verse-app.jpeg";
-import Task from "@/assets/icons/task-mate-app.jpeg";
+import movix from "@/assets/icons/cine-verse-app.png";
+import Task from "@/assets/icons/task-mate-app.png";
 import { Cursor, Typewriter } from "react-simple-typewriter";
 
 const Projects = () => {

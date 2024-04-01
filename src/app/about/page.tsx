@@ -26,18 +26,18 @@ const page = () => {
             <Cursor />
           </Box>
           <Box className="text-white text-lg">
-            Hello There, I'm Shubhanshu Nayak, a MERN stack developer, currently enriching my knowledge with a BCA
-            degree from Amity University. My journey in the MERN stack is a
-            testament to my passion for problem-solving and collaboration,
-            making me a valuable asset in any development team. With a knack for
-            crafting interactive web applications, I masterfully weave together
-            React, Node.js, Express, MongoDB, and cutting-edge libraries like
-            Convex, Clerk, Live Blocks, Next.js, Tailwind, MUI, and Bootstrap.
-            My proficiency in JavaScript and TypeScript, coupled with a keen eye
-            for design, allows me to create seamless user experiences.
-            Shubhanshu's work is a blend of creativity and technical prowess,
-            showcasing my ability to develop dynamic web applications and
-            collaborate on projects using GitHub.
+            Hello There, My self Shubhanshu Nayak, a MERN stack developer,
+            currently enriching my knowledge with a BCA degree from Amity
+            University. My journey in the MERN stack is a testament to my
+            passion for problem-solving and collaboration, making me a valuable
+            asset in any development team. With a knack for crafting interactive
+            web applications, I masterfully weave together React, Node.js,
+            Express, MongoDB, and cutting-edge libraries like Convex, Clerk,
+            Live Blocks, Next.js, Tailwind, MUI, and Bootstrap. My proficiency
+            in JavaScript and TypeScript, coupled with a keen eye for design,
+            allows me to create seamless user experiences. My work is a blend of
+            creativity and technical prowess, showcasing my ability to develop
+            dynamic web applications and collaborate on projects using GitHub.
           </Box>
         </Box>
       </Box>

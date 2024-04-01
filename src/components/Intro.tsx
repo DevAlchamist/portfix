@@ -11,7 +11,7 @@ const Intro = () => {
         <Box>Hello World!</Box>
         <Box className="text-[50px] font-bold">I am Shubhanshu.</Box>
         <Box className="text-[50px] font-bold">
-          I am a
+          I am a 
           <Typewriter
             words={["M.E.R.N Developer", "Full-Stack Developer"]}
             loop={0} // 0 for infinite loop

@@ -2,7 +2,15 @@
 import { Box, Divider } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import next from "@/assets/icons/next-16-svgrepo-com.svg";
+import react from "@/assets/icons/react-svgrepo-com.svg";
+import css from "@/assets/icons/scss-svgrepo-com.svg";
+import redux from "@/assets/icons/redux-svgrepo-com.svg";
 import movix from "@/assets/icons/cine-verse-app.png";
+import convex from "@/assets/icons/Logo-2048-white.png";
+import ts from "@/assets/icons/typescript.svg";
+import tail from "@/assets/icons/Tailwind CSS.svg";
+import Live from "@/assets/icons/live-location-svgrepo-com.svg";
 import Task from "@/assets/icons/task-mate-app.png";
 import { Cursor, Typewriter } from "react-simple-typewriter";
 
@@ -14,6 +22,12 @@ const page = () => {
       translate: "custom",
       name: "Cine-Verse",
       date: "2 Jan, 2024",
+      desc: "Cine-Verse is an online platform that serves as a comprehensive database for film and television content, offering detailed information on movies, TV shows, cast, production crew, ratings, genres, and related videos. It encompasses a wide range of entertainment services, including digital cinema, streaming channels, content marketing, and distribution, catering to a broad audience interested in visual entertainment media.",
+      tech: [
+        { img: react, title: "React" },
+        { img: css, title: "SCSS" },
+        { img: redux, title: "Redux" },
+      ],
     },
     {
       image: Task,
@@ -21,16 +35,22 @@ const page = () => {
       translate: "0",
       height: "full",
       name: "Task-Mate",
+      desc: "Task-Mate is a real-time collaboration platform built with Next.js, TypeScript, and Convex Clerk, enabling users to exchange tasks and create organizations in real-time. It features a freehand drawing library, allowing for dynamic and interactive task management. Users can invite others, assign roles, and engage in collaborative workspaces, facilitating efficient project management and teamwork.",
       date: "12 Feb, 2024",
+      tech: [
+        { img: next, title: "Next" },
+        { img: ts, title: "TS" },
+        { img: tail, title: "Tailwind" },
+        { img: convex, title: "Convex" },
+        { img: Live, title: "LiveBlocks" },
+      ],
     },
   ];
   return (
     <Box className=" bg-[#1e1842] h-full">
       <Box>
-        
         <Box className="flex items-center justify-center px-10 py-20">
           <Box className="w-[80%]">
-            
             <Box className="text-[40px] text-white font-bold">
               <span className="text-blue-500">_</span>
               <Typewriter
@@ -47,8 +67,8 @@ const page = () => {
                 {Images.map((img) => (
                   <>
                     <Divider variant="fullWidth" className="border-white" />
-                    <Box className="col-span-1 flex justify-start items-start gap-10">
-                      <Box className="relative col-span-3 w-[343px] lg:w-[632px] shadow-2xl overflow-hidden h-[400px] rounded-xl ">
+                    <Box className="col-span-1 grid grid-cols-8 justify-start items-start gap-10">
+                      <Box className="relative col-span-3 shadow-2xl overflow-hidden h-[400px] rounded-xl ">
                         {img.height && (
                           <div className="w-full z-10 h-full absolute inset-0 hover:bg-gradient-to-t hover:from-gray-600 hover:to-transparent"></div>
                         )}
@@ -67,6 +87,24 @@ const page = () => {
                       <Box className="text-white col-span-5">
                         <Box className="text-base font-normal">{img.date}</Box>
                         <Box className="text-4xl font-semibold">{img.name}</Box>
+                        <Box className="text-xl w-fit font-normal">
+                          {img.desc}
+                        </Box>
+                        <Box className="text-2xl mt-3 font-semibold">
+                          Tech-Stack
+                        </Box>
+                        <Box className="flex gap-3 ">
+                          {img.tech?.map((tech) => (
+                            <Box className=" flex items-center flex-col">
+                              <Image
+                                src={tech.img}
+                                alt="a"
+                                className="p-2 my-3 shadow-xl rounded-full bg-transparent/20 transition-transform transform duration-200 ease-in-out hover:scale-110 w-[50px] h-[50px]"
+                              />
+                              {tech.title}
+                            </Box>
+                          ))}
+                        </Box>
                       </Box>
                     </Box>
                   </>

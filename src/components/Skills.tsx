@@ -12,7 +12,7 @@ import Next from "@/assets/icons/image.png";
 import redux from "@/assets/icons/redux.svg";
 import ts from "@/assets/icons/typescript.svg";
 import css from "@/assets/icons/Tailwind CSS.svg";
-import con from "@/assets/icons/favicon.png";
+import con from "@/assets/icons/Logo-2048-white.png";
 import vs from "@/assets/icons/vscode.svg";
 import React, { useState } from "react";
 import { Cursor, Typewriter } from "react-simple-typewriter";
@@ -23,110 +23,71 @@ import { useGesture } from "react-use-gesture";
 const Skills = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const skills = [
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={html} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">HTML/CSS</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={js} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">JavaScript</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={ts} alt="as" height={75} width={75} className=" my-5" />
-      <Box className="text-4xl font-bold">TypeScript</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={Next} alt="as" height={90} width={90} className=" my-5" />
-      <Box className="text-4xl font-bold">Next Js</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={react} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">React</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={redux} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">Redux</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={con} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">Convex/Clerk</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={mongo} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">MongoDB</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={css} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">Tailwind</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={git} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">GitHub</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={node} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">Node js</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={figma} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">Figma</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
-    <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
-      <Image src={vs} alt="as" height={75} width={75} className="my-5" />
-      <Box className="text-4xl font-bold">VS Code</Box>
-      <Box>
-        Proficient in creating responsive and visually appealing we layouts
-        using HTML and CSS{" "}
-      </Box>
-    </Box>,
+    {
+      img: html,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: js,
+      title: "JavaScript",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: ts,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: Next,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: react,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: redux,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: con,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: mongo,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: css,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: git,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: node,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: figma,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
+    {
+      img: vs,
+      title: "HTML/CSS",
+      Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
+    },
   ]; // Add your skills here
 
   const nextSkill = () => {
@@ -188,7 +149,17 @@ const Skills = () => {
               className=" px-6 py-28 rounded-xl bg-[#121924]"
               whileHover={{ y: -20 }} // Move the skill card upward on hover
             >
-              {skill}
+              <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
+                <Image
+                  src={skill.img}
+                  alt="as"
+                  height={75}
+                  width={75}
+                  className="my-5"
+                />
+                <Box className="text-4xl font-bold">{skill.title}</Box>
+                <Box>{skill.Desc}</Box>
+              </Box>
             </motion.div>
           ))}
         </motion.div>

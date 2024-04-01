@@ -27,10 +27,10 @@ const page = () => {
   return (
     <Box className=" bg-[#1e1842] h-full">
       <Box>
-        {" "}
+        
         <Box className="flex items-center justify-center px-10 py-20">
           <Box className="w-[80%]">
-            {" "}
+            
             <Box className="text-[40px] text-white font-bold">
               <span className="text-blue-500">_</span>
               <Typewriter

@@ -25,7 +25,7 @@ const Projects = () => {
   return (
     <Box className="flex items-center justify-center px-10 py-20">
       <Box className="w-[80%]">
-        {" "}
+        
         <Box className="text-[50px] text-white font-bold">
           <span className="text-blue-500">_</span>
           <Typewriter
@@ -39,7 +39,7 @@ const Projects = () => {
         </Box>
         <Box className="grid-cols-2 grid gap-5">
           {Images.map((img) => (
-            <Box className="relative col-span-1 border-white border-2 w-full overflow-hidden h-[430px] rounded-xl ">
+            <Box key={img.alt} className="relative col-span-1 border-white border-2 w-full overflow-hidden h-[430px] rounded-xl ">
               {img.height && (
                 <div className="w-full z-10 h-full absolute inset-0 hover:bg-gradient-to-t hover:from-gray-600 hover:to-transparent"></div>
               )}

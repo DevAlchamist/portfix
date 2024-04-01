@@ -9,16 +9,16 @@ const Intro = () => {
     <Box className="min-h-screen flex justify-around items-center w-full">
       <Box className="text-white">
         <Box>Hello World!</Box>
-        <Box className="text-[50px] font-bold">I'm Shubhanshu.</Box>
+        <Box className="text-[50px] font-bold">I am Shubhanshu.</Box>
         <Box className="text-[50px] font-bold">
-          I'm a{" "}
+          I am a
           <Typewriter
             words={["M.E.R.N Developer", "Full-Stack Developer"]}
             loop={0} // 0 for infinite loop
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={100}
-          />{" "}
+          />
           <Cursor />.
         </Box>
         <Box className="text-[50px] font-semibold">From India.</Box>

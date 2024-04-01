@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Box className="fixed top-0 left-0 right-0">
+        <Box className="fixed z-30 top-0 left-0 right-0">
           <Navbar />
         </Box>
         {children}

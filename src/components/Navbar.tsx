@@ -74,13 +74,25 @@ const Navbar = () => {
         </Link>
       </Box>
       <Box className="flex gap-2">
-        <IconButton className="text-md text-white font-md">
+        <IconButton
+          href="https://www.linkedin.com/in/shubhanshu-nayak-9332562a4/"
+          target="_blank"
+          className="text-md text-white font-md"
+        >
           <LinkedIn />
         </IconButton>
-        <IconButton className="text-md text-white font-md">
+        <IconButton
+          href="https://twitter.com/irl_introvert06/"
+          target="_blank"
+          className="text-md text-white font-md"
+        >
           <X />
         </IconButton>
-        <IconButton className="text-md text-white font-md">
+        <IconButton
+          href="https://github.com/DevAlchamist"
+          target="_blank"
+          className="text-md text-white font-md"
+        >
           <GitHub />
         </IconButton>
       </Box>

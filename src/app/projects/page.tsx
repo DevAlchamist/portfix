@@ -62,13 +62,13 @@ const page = () => {
               />
               <Cursor />
             </Box>
+            <Divider variant="fullWidth" className="my-5 border-white" />
             <Box>
               <Box className="grid-cols-1 my-10 grid gap-5">
                 {Images.map((img) => (
                   <Box key={img.name}>
-                    <Divider variant="fullWidth" className="my-5 border-white" />
                     <Box className="col-span-1 grid grid-cols-8 justify-start items-start gap-10">
-                      <Box className="relative col-span-3 shadow-2xl overflow-hidden h-[400px] rounded-xl ">
+                      <Box className="relative col-span-4 shadow-2xl overflow-hidden h-[400px] rounded-xl ">
                         {img.height && (
                           <div className="w-full z-10 h-full absolute inset-0 hover:bg-gradient-to-t hover:from-gray-600 hover:to-transparent"></div>
                         )}
@@ -84,7 +84,7 @@ const page = () => {
                           Web
                         </Box>
                       </Box>
-                      <Box className="text-white col-span-5">
+                      <Box className="text-white col-span-4">
                         <Box className="text-base font-normal">{img.date}</Box>
                         <Box className="text-4xl font-semibold">{img.name}</Box>
                         <Box className="text-xl w-fit font-normal">
@@ -110,6 +110,10 @@ const page = () => {
                         </Box>
                       </Box>
                     </Box>
+                    <Divider
+                      variant="fullWidth"
+                      className="my-5 border-white"
+                    />
                   </Box>
                 ))}
               </Box>

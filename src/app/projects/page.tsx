@@ -66,7 +66,7 @@ const page = () => {
               <Box className="grid-cols-1 my-10 grid gap-5">
                 {Images.map((img) => (
                   <Box key={img.name}>
-                    <Divider variant="fullWidth" className="border-white" />
+                    <Divider variant="fullWidth" className="my-5 border-white" />
                     <Box className="col-span-1 grid grid-cols-8 justify-start items-start gap-10">
                       <Box className="relative col-span-3 shadow-2xl overflow-hidden h-[400px] rounded-xl ">
                         {img.height && (

@@ -35,57 +35,57 @@ const Skills = () => {
     },
     {
       img: ts,
-      title: "HTML/CSS",
+      title: "TypeScript",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: Next,
-      title: "HTML/CSS",
+      title: "NextJs",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: react,
-      title: "HTML/CSS",
+      title: "ReactJs",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: redux,
-      title: "HTML/CSS",
+      title: "Redux",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: con,
-      title: "HTML/CSS",
+      title: "Convex",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: mongo,
-      title: "HTML/CSS",
+      title: "MongoDB",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: css,
-      title: "HTML/CSS",
+      title: "Tailwind",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: git,
-      title: "HTML/CSS",
+      title: "GitHub",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: node,
-      title: "HTML/CSS",
+      title: "NodeJs",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: figma,
-      title: "HTML/CSS",
+      title: "Figma",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
     {
       img: vs,
-      title: "HTML/CSS",
+      title: "VsCode",
       Desc: "Proficient in creating responsive and visually appealing we layouts using HTML and CSS",
     },
   ]; // Add your skills here

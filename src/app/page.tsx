@@ -12,7 +12,7 @@ export default function Home() {
     <Box className=" bg-[#1e1842]"> 
       <Intro />
       <Skills />
-      <Projects />
+	      <Projects />
     </Box>
   );
 }

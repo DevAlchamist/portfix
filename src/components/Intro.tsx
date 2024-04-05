@@ -6,14 +6,15 @@ import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
 
 const Intro = () => {
   return (
-    <Box className="min-h-screen flex justify-around items-center w-full">
+    <Box className="flex items-center justify-center">
+    <Box className="min-h-screen flex justify-between items-center w-[80%]">
       <Box className="text-white">
         <Box>Hello World!</Box>
         <Box className="text-[50px] font-bold">I am Shubhanshu.</Box>
         <Box className="text-[50px] font-bold">
           I am a 
           <Typewriter
-            words={["M.E.R.N Developer", "Full-Stack Developer"]}
+            words={[" M.E.R.N Developer", " Full-Stack Developer"]}
             loop={0} // 0 for infinite loop
             typeSpeed={70}
             deleteSpeed={50}
@@ -31,10 +32,11 @@ const Intro = () => {
           </Box>
         </Box>
       </Box>
-      <Box className="">
+      <Box className=" flex items-center">
         <Image src={Img} alt="a" height={800} width={800} />
       </Box>
     </Box>
+            </Box>
   );
 };
 

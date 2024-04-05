@@ -11,6 +11,7 @@ const Projects = () => {
     {
       image: movix,
       alt: "pr1",
+      height: "full",
       translate: "custom",
       name: "Cine-Verse",
     },
@@ -18,14 +19,13 @@ const Projects = () => {
       image: Task,
       alt: "pr2",
       translate: "0",
-      height: "full",
       name: "Task-Mate",
     },
   ];
+
   return (
     <Box className="flex items-center justify-center px-10 py-20">
       <Box className="w-[80%]">
-        
         <Box className="text-[50px] text-white font-bold">
           <span className="text-blue-500">_</span>
           <Typewriter
@@ -39,19 +39,33 @@ const Projects = () => {
         </Box>
         <Box className="grid-cols-2 grid gap-5">
           {Images.map((img) => (
-            <Box key={img.alt} className="relative col-span-1 border-white border-2 w-full overflow-hidden h-[430px] rounded-xl ">
-              {img.height && (
-                <div className="w-full z-10 h-full absolute inset-0 hover:bg-gradient-to-t hover:from-gray-600 hover:to-transparent"></div>
-              )}
-              <Box className="absolute z-20  left-1 bottom-1 text-4xl font-bold rounded-lg text-white py-1 px-5 ">
-                {img.name}
+            <Box
+              key={img.alt}
+              className="relative col-span-1 border-white border-2 w-full overflow-hidden h-[430px] rounded-xl"
+            >
+              <Box
+                className={`w-full h-${img.height} 
+                ${
+                  img.translate === "custom"
+                    ? "transform transition-transform duration-1000 ease-in-out hover:translate-y-[-80%]"
+                    : "object-fill"
+                }`}
+              >
+                <Image
+                  src={img.image}
+                  alt={img.alt}
+                  className=" z-0"
+                />
               </Box>
-              <Image
-                src={img.image}
-                alt={img.alt}
-                className={`w-full z-0 h-${img.height} transform hover:translate-y-${img.translate} duration-1000 ease-linear`}
-              />
-              <Box className="absolute right-1 top-1 bg-red-500 rounded-lg text-white py-1 px-5 ">
+              <Box
+                id={`image-${img.alt}`}
+                className="hover:flex hidden hover:bg-gradient-to-t hover:from-gray-600 hover:to-transparent absolute inset-0"
+              >
+                <Box className="absolute left-1 bottom-1 text-4xl font-bold rounded-lg text-white py-1 px-5">
+                  {img.name}
+                </Box>
+              </Box>
+              <Box className="absolute right-1 top-1 bg-red-500 rounded-lg text-white py-1 px-5">
                 Web
               </Box>
             </Box>

@@ -19,7 +19,7 @@ const page = () => {
     {
       image: movix,
       alt: "pr1",
-      translate: "custom",
+      translate: "0",
       name: "Cine-Verse",
       date: "2 Jan, 2024",
       desc: "Cine-Verse is an online platform that serves as a comprehensive database for film and television content, offering detailed information on movies, TV shows, cast, production crew, ratings, genres, and related videos. It encompasses a wide range of entertainment services, including digital cinema, streaming channels, content marketing, and distribution, catering to a broad audience interested in visual entertainment media.",
@@ -69,11 +69,10 @@ const page = () => {
                   <Box key={img.name}>
                     <Box className="col-span-1 grid grid-cols-8 justify-start items-start gap-10">
                       <Box className="relative col-span-4 shadow-2xl overflow-hidden h-[400px] rounded-xl ">
-                        {img.height && (
-                          <div className="w-full z-10 h-full absolute inset-0 hover:bg-gradient-to-t hover:from-gray-600 hover:to-transparent"></div>
-                        )}
-                        <Box className="absolute z-20  left-1 bottom-1 text-xl font-bold rounded-lg text-white py-1 px-5 ">
-                          Visit
+                        <Box className="w-full z-10 h-full absolute inset-0  hover:bg-gradient-to-t text-transparent hover:text-white hover:from-gray-600 hover:to-transparent">
+                          <Box className="absolute z-20  left-1 bottom-1 text-xl font-bold rounded-lg  py-1 px-5 ">
+                            Visit
+                          </Box>
                         </Box>
                         <Image
                           src={img.image}

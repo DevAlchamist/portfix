@@ -8,7 +8,6 @@ import React, { useEffect, useState } from "react";
 const Navbar = () => {
   const pathname = usePathname();
   const [selectedLink, setSelectedLink] = useState("");
-
   useEffect(() => {
     // Set the selected link based on the current route
     switch (pathname) {

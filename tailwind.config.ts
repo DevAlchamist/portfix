@@ -16,7 +16,7 @@ const config: Config = {
       },
     },
     translate: {
-      custom: "calc(-100% + 435px)",
+      custom: "calc(-100% + 430px)",
     },
   },
   plugins: [],

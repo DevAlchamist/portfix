@@ -33,7 +33,7 @@ const page = () => {
             asset in any development team. With a knack for crafting interactive
             web applications,
           </Box>
-          <Box className="my-2 text-white text-center lg:text-start text-sm g:text-lg">
+          <Box className="my-2 text-white text-center lg:text-start text-sm lg:text-lg">
             I masterfully weave together React, Node.js, Express, MongoDB, and
             cutting-edge libraries like Convex, Clerk, Live Blocks, Next.js,
             Tailwind, MUI, and Bootstrap. My proficiency in JavaScript and

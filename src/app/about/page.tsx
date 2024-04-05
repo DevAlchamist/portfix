@@ -8,13 +8,13 @@ import { Cursor, Typewriter } from "react-simple-typewriter";
 
 const page = () => {
   return (
-    <Box className="flex items-center justify-center h-full py-[194.5px] bg-[#1e1842] w-full">
-      <Box className="flex w-[75%] items-center justify-around gap-10">
+    <Box className="flex items-center justify-center h-full pt-[80px] lg:py-[194.5px] bg-[#1e1842] w-full">
+      <Box className="flex lg:flex-row flex-col w-full lg:w-[75%] items-center justify-around gap-10">
         <Box className="card">
           <Image src={Img} alt="img" className="h-full w-full" />
         </Box>
-        <Box className="w-[50%] h-full">
-          <Box className="text-[50px] text-white font-bold">
+        <Box className="px-10 py-5 lg:w-[50%] h-full">
+          <Box className="text-[20px] lg:text-[50px] text-white font-bold">
             <span className="text-blue-500">_</span>
             <Typewriter
               words={["About Me"]}
@@ -25,7 +25,7 @@ const page = () => {
             />
             <Cursor />
           </Box>
-          <Box className="my-2 text-white text-lg">
+          <Box className="my-2 text-white text-center lg:text-start text-sm lg:text-lg">
             Hello There, My self Shubhanshu Nayak, a MERN stack developer,
             currently enriching my knowledge with a BCA degree from Amity
             University. My journey in the MERN stack is a testament to my
@@ -33,7 +33,7 @@ const page = () => {
             asset in any development team. With a knack for crafting interactive
             web applications,
           </Box>
-          <Box className="my-2 text-white text-lg">
+          <Box className="my-2 text-white text-center lg:text-start text-sm g:text-lg">
             I masterfully weave together React, Node.js, Express, MongoDB, and
             cutting-edge libraries like Convex, Clerk, Live Blocks, Next.js,
             Tailwind, MUI, and Bootstrap. My proficiency in JavaScript and

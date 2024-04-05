@@ -32,8 +32,8 @@ const Navbar = () => {
     setSelectedLink(link);
   };
   return (
-    <Box className="text-white absolute backdrop-blur-sm bg-transparent/10 w-full p-5 flex items-center justify-around">
-      <Box className="text-xl font-semibold">Dev Alchamist</Box>
+    <Box className="text-white absolute backdrop-blur-sm bg-transparent/10 w-full p-5 flex items-center justify-center lg:justify-around">
+      <Box className="hidden lg:flex text-xl font-semibold">Dev Alchamist</Box>
       <Box className="flex gap-5">
         <Link
           href="/"
@@ -72,7 +72,7 @@ const Navbar = () => {
           Contact
         </Link>
       </Box>
-      <Box className="flex gap-2">
+      <Box className="hidden lg:flex gap-2">
         <IconButton
           href="https://www.linkedin.com/in/shubhanshu-nayak-9332562a4/"
           target="_blank"

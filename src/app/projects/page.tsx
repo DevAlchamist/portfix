@@ -33,7 +33,7 @@ const page = () => {
       image: Task,
       alt: "pr2",
       translate: "0",
-      height: "full",
+      height: "",
       name: "Task-Mate",
       desc: "Task-Mate is a real-time collaboration platform built with Next.js, TypeScript, and Convex Clerk, enabling users to exchange tasks and create organizations in real-time. It features a freehand drawing library, allowing for dynamic and interactive task management. Users can invite others, assign roles, and engage in collaborative workspaces, facilitating efficient project management and teamwork.",
       date: "12 Feb, 2024",
@@ -49,9 +49,9 @@ const page = () => {
   return (
     <Box className=" bg-[#1e1842] h-full">
       <Box>
-        <Box className="flex items-center justify-center px-10 py-20">
-          <Box className="w-[80%]">
-            <Box className="text-[40px] text-white font-bold">
+        <Box className="flex items-center justify-center px-5 lg:px-10 py-20">
+          <Box className="w-full lg:w-[80%]">
+            <Box className="text-[20px] lg:text-[40px] text-white font-bold">
               <span className="text-blue-500">_</span>
               <Typewriter
                 words={["Projects"]}
@@ -68,8 +68,8 @@ const page = () => {
                 {Images.map((img) => (
                   <Box key={img.name}>
                     <Box className="col-span-1 grid grid-cols-8 justify-start items-start gap-10">
-                      <Box className="relative col-span-4 shadow-2xl overflow-hidden h-[400px] rounded-xl ">
-                        <Box className="w-full z-10 h-full absolute inset-0  hover:bg-gradient-to-t text-transparent hover:text-white hover:from-gray-600 hover:to-transparent">
+                      <Box className="relative lg:col-span-4 col-span-8 shadow-2xl overflow-hidden h-fit lg:h-[400px] rounded-xl ">
+                        <Box className="w-full z-10 h-full absolute inset-0  hover:bg-gradient-to-t text-transparent hover:text-white hover:from-transparent/90 hover:to-transparent">
                           <Box className="absolute z-20  left-1 bottom-1 text-xl font-bold rounded-lg  py-1 px-5 ">
                             Visit
                           </Box>
@@ -83,10 +83,10 @@ const page = () => {
                           Web
                         </Box>
                       </Box>
-                      <Box className="text-white col-span-4">
-                        <Box className="text-base font-normal">{img.date}</Box>
-                        <Box className="text-4xl font-semibold">{img.name}</Box>
-                        <Box className="text-xl w-fit font-normal">
+                      <Box className="text-white col-span-8 lg:col-span-4">
+                        <Box className="text-xs lg:text-base font-normal">{img.date}</Box>
+                        <Box className="text-xl lg:text-4xl font-semibold">{img.name}</Box>
+                        <Box className="text-sm lg:text-xl w-fit font-normal">
                           {img.desc}
                         </Box>
                         <Box className="text-2xl mt-3 font-semibold">
@@ -101,7 +101,7 @@ const page = () => {
                               <Image
                                 src={tech.img}
                                 alt="a"
-                                className="p-2 my-3 shadow-xl rounded-full bg-transparent/20 transition-transform transform duration-200 ease-in-out hover:scale-110 w-[50px] h-[50px]"
+                                className="p-2 my-3 shadow-xl rounded-full bg-transparent/20 transition-transform transform duration-200 ease-in-out hover:scale-110 w-[25px] lg:w-[50px] h-[25px] lg:h-[50px]"
                               />
                               {tech.title}
                             </Box>

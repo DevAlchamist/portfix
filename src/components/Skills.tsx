@@ -113,9 +113,9 @@ const Skills = () => {
   });
 
   return (
-    <Box className="flex flex-col text-white items-center justify-center p-10 bg-[#070d1a]">
-      <Box className="flex w-[80%] items-center justify-between">
-        <Box className="text-[50px] font-bold">
+    <Box className="flex flex-col text-white items-center justify-center p-5 lg:p-10 bg-[#070d1a]">
+      <Box className="flex w-full lg:w-[80%] items-center justify-between">
+        <Box className="text-[20px] lg:text-[50px] font-bold">
           <span className="text-blue-500">_</span>
           <Typewriter
             words={["Skills"]}
@@ -127,15 +127,18 @@ const Skills = () => {
           <Cursor />
         </Box>
         <Box className="">
-          <IconButton className="mx-2 bg-[#121924]" onClick={prevSkill}>
-            <ChevronLeft className="text-white " />
+          <IconButton
+            className="mx-2 lg:h-auto lg:w-auto h-5 w-5 bg-[#121924]"
+            onClick={prevSkill}
+          >
+            <ChevronLeft className=" lg:h-auto lg:w-auto h-5 w-5 text-white " />
           </IconButton>
-          <IconButton className="mx-2 bg-[#121924]" onClick={nextSkill}>
-            <ChevronRight className="text-white " />
+          <IconButton className="mx-2 lg:h-auto lg:w-auto w-5 h-5 bg-[#121924]" onClick={nextSkill}>
+            <ChevronRight className="text-white lg:h-auto lg:w-auto w-5 h-5" />
           </IconButton>
         </Box>
       </Box>
-      <Box className="w-[80%] overflow-hidden">
+      <Box className="lg:w-[80%] w-full overflow-hidden">
         <motion.div
           className="cursor-pointer flex gap-5 my-10"
           initial={{ x: 0 }}
@@ -146,19 +149,17 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className=" px-6 py-28 rounded-xl bg-[#121924]"
+              className=" px-2 py-18 lg:px-6 lg:py-28 rounded-xl bg-[#121924]"
               whileHover={{ y: -20 }} // Move the skill card upward on hover
             >
-              <Box className="w-[350px] px-6  py-14 rounded-xl bg-[#121924]">
+              <Box className=" lg:w-[350px] w-[200px] px-6  py-14 rounded-xl bg-[#121924]">
                 <Image
                   src={skill.img}
                   alt="as"
-                  height={75}
-                  width={75}
-                  className="my-5"
+                  className="object-contain lg:h-[75px] lg:w-[75px] h-[50px] w-[50px] my-5"
                 />
-                <Box className="text-4xl font-bold">{skill.title}</Box>
-                <Box>{skill.Desc}</Box>
+                <Box className="text-lg lg:text-4xl font-bold">{skill.title}</Box>
+                <Box className="lg:text-base text-xs">{skill.Desc}</Box>
               </Box>
             </motion.div>
           ))}

@@ -25,8 +25,8 @@ const Projects = () => {
 
   return (
     <Box className="flex items-center justify-center px-10 py-20">
-      <Box className="w-[80%]">
-        <Box className="text-[50px] text-white font-bold">
+      <Box className="w-full lg:w-[80%]">
+        <Box className="text-[20px] mb-4 lg:text-[50px] text-white font-bold">
           <span className="text-blue-500">_</span>
           <Typewriter
             words={["Projects"]}
@@ -41,7 +41,7 @@ const Projects = () => {
           {Images.map((img) => (
             <Box
               key={img.alt}
-              className="relative col-span-1 border-white border-2 w-full overflow-hidden h-[430px] rounded-xl"
+              className="relative col-span-2 lg:col-span-1 border-white border-2 w-full overflow-hidden h-fit lg:h-[430px] rounded-xl"
             >
               <Box
                 className={`w-full h-${img.height} 

@@ -4,10 +4,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box className="flex border-t border-white/30 flex-col text-white items-center justify-center p-10 bg-[#070d1a]">
+    <Box className="flex border-t border-white/30 flex-col text-white items-center justify-center p-5 lg:p-10 bg-[#070d1a]">
       <Box className="w-[80%]">
-        <Box className="flex items-center justify-between">
-          <Box className="text-xl font-semibold">Dev Alchamist</Box>
+        <Box className="flex items-center justify-center lg:justify-between">
+          <Box className="lg:flex hidden text-xl font-semibold">Dev Alchamist</Box>
           <Box className="flex gap-5">
             <IconButton
               href="https://www.linkedin.com/in/shubhanshu-nayak-9332562a4/"
@@ -31,7 +31,7 @@ const Footer = () => {
               <GitHub />
             </IconButton>
           </Box>
-          <Box className="flex items-center">
+          <Box className="lg:flex hidden items-center">
             <svg
               stroke="currentColor"
               fill="currentColor"

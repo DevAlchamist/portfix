@@ -47,21 +47,20 @@ const Projects = () => {
           />
           <Cursor />
         </Box>
-        <Box className="grid-cols-2 grid gap-5">
+        <Box className="grid-cols-2 grid gap-5 h-full w-full">
           {Images.map((img) => (
-            <>
               <Box
                 key={img.alt}
-                className="relative col-span-2 lg:col-span-1  w-full overflow-hidden h-fit lg:h-[343px] rounded-xl"
+                className="relative col-span-2 lg:col-span-1  w-full overflow-hidden h-[140px] lg:h-[343px] rounded-xl"
                 style={{ position: "relative" }}
               >
-                <Box className="z-0">
+                <Box className="z-0 ">
                   {img.image && (
                     <Image
                       src={img.image[0]}
                       alt={img.alt}
                       layout="fill"
-                      objectFit="cover"
+                      objectFit="contain"
                     />
                   )}
                 </Box>
@@ -81,7 +80,6 @@ const Projects = () => {
                   </Box>
                 )}
               </Box>
-            </>
           ))}
         </Box>
       </Box>

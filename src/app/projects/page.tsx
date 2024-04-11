@@ -23,7 +23,7 @@ const Page = () => {
       alt: "pr1",
       name: "Shop-Pulse",
       date: "2 Jan, 2024",
-      desc: "Cine-Verse is an online platform that serves as a comprehensive database for film and television content, offering detailed information on movies, TV shows, cast, production crew, ratings, genres, and related videos. It encompasses a wide range of entertainment services, including digital cinema, streaming channels, content marketing, and distribution, catering to a broad audience interested in visual entertainment media.",
+      desc: "Shop-Pulse is an e-commerce platform leveraging React, Tailwind CSS, Redux, and Stripe for efficient operations. It boasts a seamless shopping journey with a modern UI and secure payment handling. React's component-based structure. Redux centralizes state management, enhancing performance and scalability. Stripe's integration guarantees reliable and secure transactions, instilling customer confidence.",
       tech: [
         { img: react, title: "React" },
         { img: tail, title: "Tailwind" },

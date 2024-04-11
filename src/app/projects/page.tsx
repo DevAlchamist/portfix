@@ -22,7 +22,7 @@ const Page = () => {
       image: shop1,
       alt: "pr1",
       name: "Shop-Pulse",
-      date: "2 Jan, 2024",
+      date: "2 Dec, 2023",
       desc: "Shop-Pulse is an e-commerce platform leveraging React, Tailwind CSS, Redux, and Stripe for efficient operations. It boasts a seamless shopping journey with a modern UI and secure payment handling. React's component-based structure. Redux centralizes state management, enhancing performance and scalability. Stripe's integration guarantees reliable and secure transactions, instilling customer confidence.",
       tech: [
         { img: react, title: "React" },

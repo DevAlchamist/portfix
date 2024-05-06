@@ -5,10 +5,12 @@ import Image from "next/image";
 import Img from "@/assets/Firefly an indian programmer 's profile pic in 3d avatar wearing hoodie and a cap 27854.jpg";
 import { Box } from "@mui/material";
 import { Cursor, Typewriter } from "react-simple-typewriter";
+import NotToday from "@/components/NotToday";
 
 const page = () => {
   return (
     <Box className="flex items-center justify-center h-full pt-[80px] lg:py-[194.5px] bg-[#1e1842] w-full">
+      <NotToday />
       <Box className="flex lg:flex-row flex-col w-full lg:w-[75%] items-center justify-around gap-10">
         <Box className="card">
           <Image src={Img} alt="img" className="h-full w-full" />

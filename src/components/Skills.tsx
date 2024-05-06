@@ -1,5 +1,5 @@
 "use client";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { ChevronLeft, ChevronLeftOutlined, ChevronRight, ChevronRightOutlined } from "@mui/icons-material";
 import { Box, IconButton } from "@mui/material";
 import figma from "@/assets/icons/figma.svg";
 import git from "@/assets/icons/git.svg";
@@ -131,10 +131,10 @@ const Skills = () => {
             className="mx-2 lg:h-auto lg:w-auto h-5 w-5 bg-[#121924]"
             onClick={prevSkill}
           >
-            <ChevronLeft className=" lg:h-auto lg:w-auto h-5 w-5 text-white " />
+            <ChevronLeftOutlined className=" lg:h-auto lg:w-auto h-5 w-5 text-white " />
           </IconButton>
-          <IconButton className="mx-2 lg:h-auto lg:w-auto w-5 h-5 bg-[#121924]" onClick={nextSkill}>
-            <ChevronRight className="text-white lg:h-auto lg:w-auto w-5 h-5" />
+          <IconButton  className="mx-2 lg:h-auto lg:w-auto w-5 h-5 bg-[#121924]" onClick={nextSkill}>
+            <ChevronRightOutlined className="text-white lg:h-auto lg:w-auto w-5 h-5" />
           </IconButton>
         </Box>
       </Box>

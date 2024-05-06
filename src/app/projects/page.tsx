@@ -15,6 +15,7 @@ import tail from "@/assets/icons/Tailwind CSS.svg";
 import Live from "@/assets/icons/live-location-svgrepo-com.svg";
 import Task from "@/assets/icons/task-mate-app.png";
 import { Cursor, Typewriter } from "react-simple-typewriter";
+import NotToday from "@/components/NotToday";
 
 const Page = () => {
   const Images = [
@@ -61,6 +62,7 @@ const Page = () => {
 
   return (
     <Box className="bg-[#1e1842] h-full">
+      <NotToday />
       <Box>
         <Box className="flex items-center justify-center px-5 lg:px-10 py-20">
           <Box className="w-full lg:w-[80%]">
